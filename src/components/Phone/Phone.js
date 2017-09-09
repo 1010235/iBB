@@ -1,6 +1,5 @@
 import React, {PureComponent} from 'react';
 
-import Button from './Button';
 import './style.css';
 import './mobileStyle.css';
 import './desktopStyle.css';
@@ -17,31 +16,14 @@ export default class Phone extends PureComponent{
                         <div className="pop-up-wrapper">
                             <div className="phone-wrapper">
                                 <div className="phone-pad">
-                                    <div className="phone-top-bar">
-                                        <i className="fa fa-circle-o"></i>
-                                        <i className="fa fa-circle-o"></i>
-                                        <i className="fa fa-circle-o"></i>
-                                        <i className="fa fa-circle-o"></i>
-                                        <i className="fa fa-circle-o"></i>
-                                        <i className="fa fa-circle-o"></i>
-
-                                    </div>
                                     <div className="phone-pad-input-panel">
                                         <div className="phone-pad-input-text">
+                                            <div className="phone-bb-title">iBB</div>
                                             <input id="number-input" type="tel" readOnly="readonly" value={this.props.phoneNumberToSend}/>
+                                            <div className="phone-btn">
+                                                <i className="fa fa-square-o" aria-hidden="true"></i>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="phone-pad-input-numbers">
-                                    {this.props.buttonList.map((item, index) => {
-                                        return (<Button
-                                            key={index}
-                                            item={item}
-                                            onClick={this.props.onClick}
-                                        />)
-                                    })}
-                                    </div>
-                                    <div className="phone-pad-input-call" onClick={this.props.onSubmit}>
-                                        <i className="fa fa-circle-o"></i>
                                     </div>
                                 </div>
                             </div>
