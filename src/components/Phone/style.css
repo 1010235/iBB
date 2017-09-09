@@ -1,0 +1,40 @@
+/* Using the ITCSS (http://itcss.io/) architecture for CSS */
+
+
+/* 1. Settings - Preprocessors variables, fonts, imports, etc. */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* 2. Tools - mixins */
+
+
+/* 3. Generic - very generic CSS rules */
+
+* {
+box-sizing: border-box;
+font-family: Roboto;
+font-size: 14px;
+}
+
+i {
+font-size: 20px;
+}
+
+/* 4. Elements - HTML Elements of the page h1-h6, etc. */
+
+body {
+margin: 0;
+padding: 0;
+background-color: #888;
+}
+
+a {}
+
+a:hover {}
+
+input {}
+
+input:focus {}
+
+input[type="submit"],
+input[type="button"] {}
